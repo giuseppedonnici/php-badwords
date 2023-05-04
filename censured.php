@@ -2,6 +2,14 @@
 $word = $_GET['word'];
 $para = $_GET['paragraph'];
 
+if(isset($_ET['word'])) {
+    $word = $_GET['word'];
+}
+
+if(empty($para)) {
+    echo 'Inserisci il testo';
+}
+
 ?>
 
 <!DOCTYPE html>
